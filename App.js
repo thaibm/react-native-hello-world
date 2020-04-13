@@ -17,12 +17,13 @@ import {
 } from 'react-native';
 
 import {Header, Colors} from 'react-native/Libraries/NewAppScreen';
-import NewBieGuide from './components/NewBieGuide/index';
+// import NewBieGuide from './components/NewBieGuide/index';
+import ColorPicker from './components/ColorPicker/index';
 
 const App = () => {
   return (
     <View>
-      <StatusBar barStyle="dark-content" backgroundColor="transparent" />
+      <StatusBar barStyle="light-content-content" />
       <SafeAreaView>
         <ScrollView
           contentInsetAdjustmentBehavior="automatic"
@@ -33,7 +34,8 @@ const App = () => {
               <Text style={styles.footer}>Engine: Hermes</Text>
             </View>
           )}
-          <NewBieGuide />
+          <ColorPicker></ColorPicker>
+          {/* <NewBieGuide /> */}
         </ScrollView>
       </SafeAreaView>
     </View>
